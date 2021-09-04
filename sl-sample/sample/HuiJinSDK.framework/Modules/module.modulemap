@@ -1,0 +1,11 @@
+framework module HuiJinSDK {
+  umbrella header "HuiJinSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module HuiJinSDK.Swift {
+    header "HuiJinSDK-Swift.h"
+    requires objc
+}

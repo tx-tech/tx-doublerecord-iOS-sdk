@@ -1,0 +1,779 @@
+
+{
+    "errCode": 0,
+    "result": {
+        "insurances": [
+            {
+                "fields": {
+                    "seats-create":[
+                        [
+                            {
+                                "type": "input",
+                                "name": "业务单号",
+                                "key": "taskId",
+                                "fieldType":"string",
+                                "placeholder": "请输入业务单号",
+                                "options": []
+                            },
+                            {
+                                "type": "label",
+                                "name": "所属区域",
+                                "key": "institutionNames",
+                                "fieldType":"string",
+                                "placeholder": "请输入机构名称",
+                                "options": []
+                            },
+                            {
+                                "type": "input",
+                                "name": "中介机构",
+                                "key": "IntermediaryInstitutions",
+                                "fieldType":"string",
+                                "placeholder": "请输入中介机构",
+                                "options": []
+                            },
+                            {
+                                "type": "label",
+                                "name": "代理人姓名",
+                                "key": "reportId",
+                                "fieldType":"string",
+                                "placeholder": "请输入代理人姓名",
+                                "options": []
+                            },
+                            {
+                                "type": "input",
+                                "name": "代理人编码",
+                                "key": "loginName",
+                                "fieldType":"string",
+                                "placeholder": "请输入代理人编码",
+                                "options": []
+                            },
+                            {
+                                "type": "select",
+                                "name": "代理人证件类型",
+                                "key": "agentCertificateType",
+                                "fieldType":"string",
+                                "placeholder": "",
+                                "options": [
+                                    {
+                                        "key": "ID",
+                                        "name": "身份证",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "AbnormalID",
+                                        "name": "异常身份证",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "input",
+                                "name": "代理人证件号",
+                                "key": "agentCertificateNo",
+                                "fieldType":"string",
+                                "placeholder": "请输入代理人证件号",
+                                "options": []
+                            }
+                        ],
+                        
+                        [
+                            {
+                                "type": "input",
+                                "name": "投保人姓名",
+                                "key": "policyholderName",
+                                "fieldType":"string",
+                                "placeholder": "请输入投保人姓名",
+                                "options": []
+                            },
+                            {
+                                "type": "select",
+                                "name": "投保人证件类型",
+                                "key": "policyholderCertificateType",
+                                "fieldType":"string",
+                                "placeholder": "",
+                                "options": [
+                                    {
+                                        "key": "ID",
+                                        "name": "身份证",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "AbnormalID",
+                                        "name": "异常身份证",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "input",
+                                "name": "投保人证件号",
+                                "key": "policyholderCertificateNo",
+                                "fieldType":"string",
+                                "placeholder": "请输入投保人证件号",
+                                "options": []
+                            },
+                            {
+                                "type": "input",
+                                "name": "投保人年龄",
+                                "key": "policyholderAge",
+                                "fieldType":"number",
+                                "placeholder": "请输入投保人年龄",
+                                "options": []
+                            },
+                            {
+                                "type": "select",
+                                "name": "投保人性别",
+                                "key": "policyholderGender",
+                                "fieldType":"number",
+                                "placeholder": "",
+                                "options": [
+                                    {
+                                        "key": 0,
+                                        "name": "男",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": 1,
+                                        "name": "女",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "input",
+                                "name": "投保人手机号",
+                                "key": "policyholderPhone",
+                                "fieldType":"string",
+                                "placeholder": "请输入投保人手机号",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": []
+                            }
+                        ],
+                        [
+                            {
+                                "_id": "5ed70b431b1d6a13e41d65fa",
+                                "type": "select",
+                                "name": "与投保人关系",
+                                "key": "relationship",
+                                "fieldType":"string",
+                                "placeholder": "请选择与投保人关系",
+                                "options": [
+                                    {
+                                        "key": "Self",
+                                        "name": "本人",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "Spouse",
+                                        "name": "配偶",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "Parents",
+                                        "name": "父母",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "Children",
+                                        "name": "子女",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "Others",
+                                        "name": "其他",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "Siblings",
+                                        "name": "兄弟姐妹",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "GrandParents",
+                                        "name": "（外）祖父母",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "GrandChildren",
+                                        "name": "外）孙子女",
+                                        "children": []
+                                    }
+                                ],
+                                "isSplitPosition": false,
+                                "multiple": false,
+                                "keyArray": []
+                            }],
+                        [
+                            {
+                                "_id": "5ed7097a1b1d6a13e41d65f7",
+                                "type": "input",
+                                "name": "被保人姓名",
+                                "key": "insuredName",
+                                "fieldType":"string",
+                                "placeholder": "请输入被保险人名字",
+                                "options": []
+                            },
+                            {
+                                "type": "select",
+                                "name": "被保人证件类型",
+                                "key": "insuredCertificateType",
+                                "fieldType":"string",
+                                "placeholder": "",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": [
+                                    {
+                                        "key": "ID",
+                                        "name": "身份证",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "AbnormalID",
+                                        "name": "异常身份证",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "_id": "5ed70a271b1d6a13e41d65f9",
+                                "type": "input",
+                                "name": "被保人证件号",
+                                "key": "insuredCertificateNo",
+                                "fieldType":"string",
+                                "creator": "5d89c9f4c68a9d577235f1c0",
+                                "utime": "2020-03-18T09:10:40.932Z",
+                                "ctime": "2020-03-18T09:10:40.932Z",
+                                "client_sort": 8,
+                                "client_weight": "1",
+                                "__v": 0,
+                                "placeholder": "请输入被保人证件号",
+                                "style": {
+                                    "width": "100%"
+                                },
+                                "user_visible": true,
+                                "client_editable": true,
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "from": [],
+                                "allowClear": true,
+                                "require": false,
+                                "options": [],
+                                "isSplitPosition": false,
+                                "multiple": false,
+                                "keyArray": []
+                            },
+                            {
+                                "type": "input",
+                                "name": "被保人年龄",
+                                "key": "insuredAge",
+                                "fieldType":"number",
+                                "placeholder": "请输入被保人年龄",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": []
+                            },
+                            {
+                                "type": "select",
+                                "name": "被保人性别",
+                                "key": "insuredGender",
+                                "fieldType":"number",
+                                "placeholder": "",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": [
+                                    {
+                                        "key": 0,
+                                        "name": "男",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": 1,
+                                        "name": "女",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "input",
+                                "name": "被保人手机号",
+                                "key": "insuredPhone",
+                                "fieldType":"string",
+                                "placeholder": "请输入被保人手机号",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": []
+                            }
+                        ],
+                        [
+                            {
+                                "type": "select",
+                                "name": "销售渠道",
+                                "key": "saleFrom",
+                                "fieldType":"string",
+                                "placeholder": "",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": [
+                                    {
+                                        "key": "personal",
+                                        "name": "个险",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "bank",
+                                        "name": "银保",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "company",
+                                        "name": "经代",
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            {
+                                "type": "select",
+                                "name": "投单渠道",
+                                "key": "taskFrom",
+                                "fieldType":"string",
+                                "placeholder": "",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": [
+                                    {
+                                        "key": "App",
+                                        "name": "展业App",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "Website",
+                                        "name": "官网",
+                                        "children": []
+                                    },
+                                    {
+                                        "key": "MiniProgram",
+                                        "name": "小程序",
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            {
+                                "type": "input",
+                                "name": "整单首期保费",
+                                "key": "insuranceAllPaymentDown",
+                                "fieldType":"number",
+                                "placeholder": "请输入整单首期保费",
+                                "terminal": [
+                                    "seats-create",
+                                    "seats-info"
+                                ],
+                                "options": []
+                            }
+                        ],
+                        [
+                            {
+                                "type": "onlyButton",
+                                "name": "添加产品",
+                                "key": "insuranceAllPaymentDown",
+                                "placeholder": "请输入整单首期保费",
+                                "options": []
+                            }
+                        ]
+                    ],
+                    
+                    "seats-info": [
+                        {
+                            "_id": "5ec7810f8444541f383e9b2e",
+                            "type": "input",
+                            "name": "报案号",
+                            "key": "reportId",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.699Z",
+                            "ctime": "2020-03-18T09:10:40.699Z",
+                            "client_sort": 0,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请输入报案号",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": true,
+                            "options": [],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5e71e590266ff945fda90b84",
+                            "type": "input",
+                            "name": "姓名",
+                            "key": "insurantName",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.816Z",
+                            "ctime": "2020-03-18T09:10:40.816Z",
+                            "client_sort": 3,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请输入被保险人名字",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": true,
+                            "options": [],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5e71e590266ff945fda90b85",
+                            "type": "input",
+                            "name": "联系电话",
+                            "key": "insurantPhone",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.875Z",
+                            "ctime": "2020-03-18T09:10:40.875Z",
+                            "client_sort": 4,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请输入联系电话",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "pattern": "^((1[0-9]{1})+\\d{9})$",
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": true,
+                            "options": [],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5e71e590266ff945fda90b86",
+                            "type": "input",
+                            "name": "身份证号",
+                            "key": "insurantIdCard",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.932Z",
+                            "ctime": "2020-03-18T09:10:40.932Z",
+                            "client_sort": 5,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请输入身份证号",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": false,
+                            "options": [],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5ed70b431b1d6a13e41d65fa",
+                            "type": "select",
+                            "name": "与投保人关系",
+                            "key": "relationship",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.757Z",
+                            "ctime": "2020-03-18T09:10:40.757Z",
+                            "client_sort": 6,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请选择与投保人关系",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": true,
+                            "options": [
+                                {
+                                    "key": "0",
+                                    "name": "本人",
+                                    "children": []
+                                },
+                                {
+                                    "key": "1",
+                                    "name": "配偶",
+                                    "children": []
+                                },
+                                {
+                                    "key": "2",
+                                    "name": "父母",
+                                    "children": []
+                                },
+                                {
+                                    "key": "3",
+                                    "name": "子女",
+                                    "children": []
+                                },
+                                {
+                                    "key": "4",
+                                    "name": "其他",
+                                    "children": []
+                                }
+                            ],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5ed7097a1b1d6a13e41d65f7",
+                            "type": "input",
+                            "name": "被保人姓名",
+                            "key": "insuredName",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.816Z",
+                            "ctime": "2020-03-18T09:10:40.816Z",
+                            "client_sort": 7,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请输入被保险人名字",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": false,
+                            "options": [],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5ed70a271b1d6a13e41d65f9",
+                            "type": "input",
+                            "name": "被保人身份证号",
+                            "key": "insuredIdCard",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.932Z",
+                            "ctime": "2020-03-18T09:10:40.932Z",
+                            "client_sort": 8,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请输入被保人身份证号",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": false,
+                            "options": [],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5ed70bdc1b1d6a13e41d65fb",
+                            "type": "input",
+                            "name": "保额（元）",
+                            "key": "insuredMoney",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.932Z",
+                            "ctime": "2020-03-18T09:10:40.932Z",
+                            "client_sort": 9,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请输入保额",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": false,
+                            "options": [],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5ed70c321b1d6a13e41d65fc",
+                            "type": "select",
+                            "name": "保障期限",
+                            "key": "insuredDate",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.757Z",
+                            "ctime": "2020-03-18T09:10:40.757Z",
+                            "client_sort": 10,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请选择保障期限",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": true,
+                            "options": [
+                                {
+                                    "key": "10",
+                                    "name": "10年",
+                                    "children": []
+                                },
+                                {
+                                    "key": "20",
+                                    "name": "20年",
+                                    "children": []
+                                },
+                                {
+                                    "key": "30",
+                                    "name": "30年",
+                                    "children": []
+                                }
+                            ],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        },
+                        {
+                            "_id": "5ed70ca91b1d6a13e41d65fd",
+                            "type": "select",
+                            "name": "交费方式",
+                            "key": "payType",
+                            "creator": "5d89c9f4c68a9d577235f1c0",
+                            "utime": "2020-03-18T09:10:40.757Z",
+                            "ctime": "2020-03-18T09:10:40.757Z",
+                            "client_sort": 11,
+                            "client_weight": "1",
+                            "__v": 0,
+                            "placeholder": "请选择交费方式",
+                            "style": {
+                                "width": "100%"
+                            },
+                            "user_visible": true,
+                            "client_editable": true,
+                            "terminal": [
+                                "seats-create",
+                                "seats-info"
+                            ],
+                            "from": [],
+                            "allowClear": true,
+                            "require": true,
+                            "options": [
+                                {
+                                    "key": "0",
+                                    "name": "交10年（月交）",
+                                    "children": []
+                                },
+                                {
+                                    "key": "1",
+                                    "name": "交20年（月交）",
+                                    "children": []
+                                },
+                                {
+                                    "key": "2",
+                                    "name": "交30年（月交）",
+                                    "children": []
+                                },
+                                {
+                                    "key": "3",
+                                    "name": "交10年（年交）",
+                                    "children": []
+                                },
+                                {
+                                    "key": "4",
+                                    "name": "交20年（年交）",
+                                    "children": []
+                                },
+                                {
+                                    "key": "5",
+                                    "name": "交30年（年交）",
+                                    "children": []
+                                }
+                            ],
+                            "isSplitPosition": false,
+                            "multiple": false,
+                            "keyArray": []
+                        }
+                    ],
+                    "seats-dynamic": [],
+                    "seats-info-dynamic": []
+                }
+            }
+        ],
+        "cases": []
+    }
+}
+

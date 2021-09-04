@@ -1,0 +1,206 @@
+{
+    "add-create": [
+        {
+            "type": "select",
+            "name": "主附险类型",
+            "key": "insuranceIsMain",
+            "fieldType":"number",
+            "placeholder": "",
+            "keyboardType":0,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": [
+                {
+                    "key": 1,
+                    "name": "主险",
+                    "children": []
+                },
+                {
+                    "key": 0,
+                    "name": "附加险",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "name": "产品类型",
+            "key": "insuranceType",
+            "fieldType":"string",
+            "placeholder": "",
+            "keyboardType":0,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": [
+                {
+                    "key": "tradition",
+                    "name": "传统险",
+                    "children": []
+                },
+                {
+                    "key": "forEven",
+                    "name": "投连险",
+                    "children": []
+                },
+                {
+                    "key": "bonus",
+                    "name": "分红险",
+                    "children": []
+                },
+                {
+                    "key": "universal",
+                    "name": "万能险",
+                    "children": []
+                },
+                {
+                    "key": "health",
+                    "name": "健康险",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "name": "产品名称",
+            "key": "insuranceName",
+            "fieldType":"string",
+            "placeholder": "",
+            "keyboardType":0,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": [
+            ]
+        },
+        {
+            "type": "input",
+            "name": "产品首期保费",
+            "key": "insurancePaymentDown",
+            "fieldType":"number",
+            "placeholder": "请输入产品首期保费",
+            "keyboardType":4,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": []
+        },
+        {
+            "type": "select",
+            "name": "缴费频次",
+            "key": "insurancePaymentMethod",
+            "fieldType":"string",
+            "placeholder": "",
+            "keyboardType":0,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": [
+                {
+                    "key": "OneOff",
+                    "name": "趸缴",
+                    "children": []
+                },
+                {
+                    "key": "Monthly",
+                    "name": "月缴",
+                    "children": []
+                },
+                {
+                    "key": "Quarterly",
+                    "name": "季缴",
+                    "children": []
+                },
+                {
+                    "key": "Semiannually",
+                    "name": "半年缴",
+                    "children": []
+                },
+                {
+                    "key": "Annually",
+                    "name": "年缴",
+                    "children": []
+                },
+                {
+                    "key": "Irregularly",
+                    "name": "不定期缴",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "type": "input",
+            "name": "缴费期",
+            "key": "insurancePaymentPeriods",
+            "fieldType":"number",
+            "placeholder": "请输入缴费期",
+            "keyboardType":4,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": []
+        },
+        {
+            "type": "input",
+            "name": "每期保费",
+            "key": "insurancePaymentPrice",
+            "fieldType":"number",
+            "placeholder": "请输入每期保费",
+            "keyboardType":4,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": []
+        },
+        {
+            "type": "select",
+            "name": "保险期间单位",
+            "key": "insurancePaymentYearUnit",
+            "fieldType":"string",
+            "placeholder": "",
+            "keyboardType":0,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": [
+                {
+                    "key": "Year",
+                    "name": "多少年",
+                    "children": []
+                },
+                {
+                    "key": "Age",
+                    "name": "保至多少岁",
+                    "children": []
+                },
+                {
+                    "key": "LifeLong",
+                    "name": "终身",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "type": "input",
+            "name": "保险期间",
+            "key": "insurancePaymentYear",
+            "fieldType":"number",
+            "placeholder": "请输入每期保费",
+            "keyboardType":0,
+            "terminal": [
+                "seats-create",
+                "seats-info"
+            ],
+            "options": []
+        }
+        ]
+}
